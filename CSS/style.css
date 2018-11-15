@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.left {
+    width: 300px;
+    background-color: rgb(51, 44, 44);
+}
+
+.right {
+    width: calc(100% - 300px);
+    background-color: rgb(85, 80, 80);
+}
+
+.left-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 20px;
+}
+
+.studentscore {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.resultTitle {
+    color: rgb(218, 187, 12);
+    text-shadow: 2px 2px 5px rgb(167, 81, 81);
+}
+
+.statics {
+    display: flex;
+    margin-top: 50px;
+}
+
+.statics-name {
+    color: rgb(10, 170, 71);
+    font-weight: bold;
+}
+
+.results {
+    color: white;
+    margin-left: 30px;
+}
+
+.results nav ul li,
+.statics nav ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    color: white;
+    margin-top: 300px;
+}
+
+.copyright h2 {
+    color: rgb(218, 187, 12);
+    text-shadow: 2px 2px 5px #FF0000;
+}
+
+.table {
+    margin: 20px 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tableHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(223, 222, 226);
+    border-top-left-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.addBTN {
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 20px;
+    width: 200px;
+    background-color: rgb(19, 173, 19);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.RMBTN {
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 20px;
+    width: 200px;
+    background-color: rgb(158, 9, 9);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.UPBTN {
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 20px;
+    width: 200px;
+    background-color: rgb(22, 74, 214);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table-body {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.stud-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.studTitles {
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-top: 0;
+    background-color: rgb(255, 153, 0);
+    font-weight: bold;
+    height: 30px;
+}
+
+.stud {
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-top: 0;
+    background-color: rgb(255, 153, 0);
+    font-weight: bold;
+    height: 30px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.avarage {
+    display: flex;
+    flex-direction: column;
+}
+
+.avarageScore1,
+.avarageScore2,
+.avarageScore3,
+.avarageScore4,
+.avarageScore5,
+.avarageScore6,
+.avarageScore7,
+.avarageScore8,
+.avarageScore9,
+.avarageScore10,
+.avarageScore11,
+.avarageScore12,
+.avarageScore13,
+.avarageScore14,
+.avarageScore15 {
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-top: 0;
+    background-color: rgb(233, 236, 12);
+    text-align: center;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.avarageScoreTitle {
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-top: 0;
+    background-color: rgb(255, 153, 0);
+    text-align: center;
+    height: 30px;
+}
+
+.grade {
+    display: flex;
+    flex-direction: column;
+}
+
+.box1,
+.box2, 
+.box3, 
+.box4, 
+.box5, 
+.box6, 
+.box7, 
+.box8, 
+.box9, 
+.box10, 
+.box11, 
+.box12, 
+.box13, 
+.box14, 
+.box15 {
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-top: 0;
+    background-color: rgb(158, 9, 9);
+    text-align: center;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100px;
+    color: white;
+}
+
+.boxTitle {
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-top: 0;
+    background-color: rgb(255, 153, 0);
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 479px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        background-color: rgb(51, 44, 44);
+        width: 100%;
+    }
+    
+    .right {
+        background-color: rgb(85, 80, 80);
+        width: 100%;
+    }
+
+    .left-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding: 10px;
+    }
+
+    .copyright {
+        color: white;
+        margin-top: 20px;
+        flex: 1 100%;
+    }
+
+    .tableHead {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(223, 222, 226);
+        border-top-left-radius: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .table {
+        margin: 20px 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .studentscore {
+        display: flex;
+        flex-direction: row; 
+        overflow: visible;
+    }
+
+    .table-body {
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 850px) {
+    .studentscore {
+        display: flex;
+        flex-direction: row; 
+        overflow: auto;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        background-color: rgb(51, 44, 44);
+        width: 100%;
+    }
+    
+    .right {
+        background-color: rgb(85, 80, 80);
+        width: 100%;
+    }
+
+    .left-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding: 10px;
+    }
+
+    .copyright {
+        color: white;
+        margin-top: 20px;
+    }
+
+    .tableHead {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(223, 222, 226);
+        border-top-left-radius: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .statics {
+        display: flex;
+        flex: 1 100%;
+        margin-top: 50px;
+    }
+}
