@@ -1,5 +1,5 @@
 TECHUB FIRST STEP PROJECT
-Student Management Systemt
+Student Management System
 
 As a first step project you are going to develop Student management system using only HTML/CSS/Javascript The application will have a main table, where the student’s names are listed with the grade points assigned to them for every lecture and the average of points.
 
